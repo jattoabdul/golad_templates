@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>Golad Telecommunications| Home</title>
+
+    <meta name="author" content="codesquad.co">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+
+    <!-- Favicon and touch icons  -->
+    <link href="images/icon/favicon.png" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+        <script src="javascript/html5shiv.js"></script>
+        <script src="javascript/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="header-sticky">
+
+    <div class="boxed">
+        <div class="loader">
+            <span class="loader1 block-loader"></span>
+            <span class="loader2 block-loader"></span>
+            <span class="loader3 block-loader"></span>
+        </div>
+
+        <div class="header-inner-pages">
+            <div class="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="flat-information">
+                                <li class="phone">
+                                    <a href="#" title="Phone number"><i>Call us: 290 986 1386</i></a>
+                                </li>
+                                <li class="email">
+                                    <a href="#" title="Email address"><i>Email: support24-7@gmail.com</i></a>
+                                </li>
+                            </ul>
+                            <div class="style-box text-right">
+                                <ul class="flat-socials v1">
+                                    <li class="facebook">
+                                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                    <li class="wifi">
+                                        <a href="#"><i class="fa fa-wifi"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="question">
+                                    <div>
+                                        <i class="fa fa-question-circle-o"></i><p class="text">Have any questions</p>
+                                    </div>
+                                </div>
+                                <a href="#" role="button" data-toggle="modal" data-target="#login-modal">
+                                    <div class="box-text text-right">
+                                        <p>E-Recharge</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!-- col-md-12 -->
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- Top -->
+        </div><!-- header-inner-pages -->
+
+        <!-- BEGIN # MODAL LOGIN -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" align="center">
+					<img class="img" id="img_logo" src="images/logo.png">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="fa fa-times" aria-hidden="true"></span>
+					</button>
+				</div>
+
+                <!-- Begin # DIV Form -->
+                <div id="div-forms">
+
+                    <!-- Begin # Login Form -->
+                    <form id="login-form">
+		                <div class="modal-body">
+				    		<div id="div-login-msg">
+                                <div id="icon-login-msg" class="fa fa-chevron-right"></div>
+                                <span id="text-login-msg">Type your username and password.</span>
+                            </div>
+				    		<input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+        		    	</div>
+				        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                            </div>
+				    	    <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+				        </div>
+                    </form>
+                    <!-- End # Login Form -->
+
+                    <!-- Begin | Lost Password Form -->
+                    <form id="lost-form" style="display:none;">
+    	    		    <div class="modal-body">
+		    				<div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="fa fa-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+		    		    </div>
+                    </form>
+                    <!-- End | Lost Password Form -->
+
+                    <!-- Begin | Register Form -->
+                    <form id="register-form" style="display:none;">
+            		    <div class="modal-body">
+		    				<div id="div-register-msg">
+                                <div id="icon-register-msg" class="fa fa-chevron-right"></div>
+                                <span id="text-register-msg">Register an account.</span>
+                            </div>
+		    				<input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+		    		    </div>
+                    </form>
+                    <!-- End | Register Form -->
+
+                </div>
+                <!-- End # DIV Form -->
+
+			</div>
+		</div>
+	</div>
+    <!-- END # MODAL LOGIN -->
+
+        <!-- Wrap-slide -->
+        <div class="wrap-slider">
+            <!-- Header -->
+            <header id="header" class="header style-color clearfix">
+                <div class="container">
+                    <div class="header-wrap clearfix">
+                        <div id="logo" class="logo">
+                            <a href="index.html" rel="home">
+                                <img src="images/logo.png" alt="image">
+                            </a>
+                        </div><!-- /.logo -->
+
+                        <div class="nav-wrap">
+                            <div class="btn-menu">
+                                <span></span>
+                            </div><!-- //mobile menu button -->
+
+                            <nav id="mainnav" class="mainnav">
+                                <ul class="menu">
+                                    <li class="home"><a href="index.html">Home</a></li>
+                                    <li><a href="overview.html">About Us</a></li>
+                                    <li><a href="services.html">Services</a>
+                                      <ul class="submenu">
+                                          <li><a href="services-single.html">CONNECT SERVICES</a></li>
+                                          <li><a href="services-single.html">SALES & DISTRIBUTION</a></li>
+                                          <li><a href="services-single.html">MOBILE MONEY</a></li>
+                                          <li><a href="services-single.html">E-RECHARGE</a></li>
+                                          <li><a href="services-single.html">SIM REGISTRATION SERVICES</a></li>
+                                          <li><a href="services-single.html">VIRTUAL TOP-UP(VTU)</a></li>
+                                      </ul><!-- /.submenu -->
+                                    </li>
+                                    <li><a href="blog.html">Media Center</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul><!-- /.menu -->
+                            </nav><!-- /.mainnav -->
+                        </div><!-- /.nav-wrap -->
+                    </div><!-- /.header-wrap -->
+                </div>
+            </header><!-- /.header -->
+        </div> <!-- /.wrap-slider -->
+        <!-- / End Wrap-slide -->
+
+        <!--Revolution TOp Slider Image-->
+        <div id="rev_slider_1078_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export" data-source="gallery" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+            <!-- START REVOLUTION SLIDER 5.3.0.2 auto mode -->
+            <div id="rev_slider_1078_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.0.2">
+                <ul><!-- SLIDE  -->
+
+                    <!-- SLIDE 1 -->
+                    <li data-index="rs-3047" data-transition="slideremovedown" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="assets/images/bike-100x50.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Ken Burns" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+
+                        <!-- MAIN IMAGE -->
+                        <img src="images/slides/1.jpg"  alt=""  data-bgposition="center center" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 12 -->
+                        <div class="tp-caption title-slide"
+                            id="slide-3047-layer-1"
+                            data-x="['center','center','center','center']" data-hoffset="['-208','-100','0','0']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-60']"
+                            data-fontsize="['65','65','45','30']"
+                            data-lineheight="['65','65','45','35']"
+                            data-fontweight="['700','700','700','700']"
+                            data-width="none"
+                            data-height="none"
+                            data-whitespace="nowrap"
+
+                            data-type="text"
+                            data-responsive_offset="on"
+
+                            data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+
+                            data-textAlign="['left','left','center','center']"
+                            data-paddingtop="[10,10,10,10]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0"
+                            data-paddingleft="[0,0,0,0]"
+
+                            style="z-index: 16; white-space: nowrap;text-transform:left;">Top 20 sales <br>Training company
+                        </div>
+
+                        <!-- LAYER NR. 13 -->
+                        <div class="tp-caption sub-title"
+                            id="slide-3047-layer-4"
+                            data-x="['center','center','center','center']" data-hoffset="['-220','-120','0','0']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['29','29','29','0']"
+                            data-fontsize="['16',16','16','14']"
+                            data-fontweight="['600','600','600','600']"
+                            data-width="660"
+                            data-height="none"
+                            data-whitespace="nowrap"
+
+                            data-type="text"
+                            data-responsive_offset="on"
+
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                            data-textAlign="['left','left','center','center']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+
+                            style="z-index: 17; white-space: nowrap;text-transform:left;">We serve every size and type company from startups to Fortune 50.
+                        </div>
+
+                        <a href="overview.html" target="_self" class="tp-caption flat-button-slider bg-orange"
+
+                        data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+
+                        data-x="['center','center','center','center']" data-hoffset="['-453','-353','0','0']"
+                        data-y="['middle','middle','middle','middle']" data-voffset="['134','134','134','50']"
+                        data-hoffset="-75"
+                        data-voffset="83"
+                        data-width="['210']"
+                        data-height="['55']">OUR COMPANY <i class="fa fa-chevron-right"></i>
+                        </a><!-- END LAYER LINK -->
+                    </li>
+
+                    <!-- SLIDE 2 -->
+                    <li data-index="rs-3048" data-transition="slideremovedown" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="assets/images/bike-100x50.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Ken Burns" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+
+                        <!-- MAIN IMAGE -->
+                        <img src="images/slides/2.jpg"  alt=""  data-bgposition="center center" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 12 -->
+                        <div class="tp-caption title-slide"
+                            id="slide-3047-layer-1"
+                            data-x="['center','center','center','center']" data-hoffset="['-208','-100','0','0']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-60']"
+                            data-fontsize="['65','65','45','30']"
+                            data-lineheight="['65','65','45','35']"
+                            data-fontweight="['700','700','700','700']"
+                            data-width="none"
+                            data-height="none"
+                            data-whitespace="nowrap"
+
+                            data-type="text"
+                            data-responsive_offset="on"
+
+                            data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+
+                            data-textAlign="['left','left','center','center']"
+                            data-paddingtop="[10,10,10,10]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0"
+                            data-paddingleft="[0,0,0,0]"
+
+                            style="z-index: 16; white-space: nowrap;text-transform:left;">Top 20 sales <br>Training company
+                        </div>
+
+                        <!-- LAYER NR. 13 -->
+                        <div class="tp-caption sub-title"
+                            id="slide-3047-layer-4"
+                            data-x="['center','center','center','center']" data-hoffset="['-220','-120','0','0']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['29','29','29','0']"
+                            data-fontsize="['16',16','16','14']"
+                            data-fontweight="['600','600','600','600']"
+                            data-width="660"
+                            data-height="none"
+                            data-whitespace="nowrap"
+
+                            data-type="text"
+                            data-responsive_offset="on"
+
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                            data-textAlign="['left','left','center','center']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+
+                            style="z-index: 17; white-space: nowrap;text-transform:left;">We serve every size and type company from startups to Fortune 50.
+                        </div>
+
+                        <a href="overview.html" target="_self" class="tp-caption flat-button-slider bg-orange"
+
+                        data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+
+                        data-x="['center','center','center','center']" data-hoffset="['-453','-353','0','0']"
+                        data-y="['middle','middle','middle','middle']" data-voffset="['134','134','134','50']"
+                        data-hoffset="-75"
+                        data-voffset="83"
+                        data-width="['210']"
+                        data-height="['55']">OUR COMPANY <i class="fa fa-chevron-right"></i>
+                        </a><!-- END LAYER LINK -->
+                    </li>
+                </ul>
+            </div>
+        </div><!-- END REVOLUTION SLIDER -->
+        <!--/ End Revolution TOp Slider Image-->
+
+        <section class="flat-row no-padding-bottom">
+            <div class="flat-choose-us">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="choose-us">
+                                <div class="flat-icon-post">
+                                    <div class="flat-icon">
+                                        <div class="post">
+                                            <div class="item">
+                                                <div class="iconbox icon-left v1">
+                                                    <div class="thumb">
+                                                        <img src="images/about/home1/1.jpg" alt="image">
+                                                        <div class="overlay"></div>
+                                                    </div>
+                                                    <div class="box-header">
+                                                        <i class="icon-diagram-3"></i>
+                                                    </div>
+                                                    <div class="icon-post">
+                                                        <div class="box-title">
+                                                            <h4 class="title">Airtime</h4>
+                                                            <div class="box-content">
+                                                                <p>
+                                                                  We are actively involved in the sales and distribution of Recharge Cards, Vouchers & VTU...
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="iconbox icon-left v1">
+                                                    <div class="thumb">
+                                                        <img src="images/about/home1/2.jpg" alt="image">
+                                                        <div class="overlay"></div>
+                                                    </div>
+                                                    <div class="box-header v1">
+                                                        <i class="icon-justice-scale"></i>
+                                                    </div>
+                                                    <div class="icon-post">
+                                                        <div class="box-title">
+                                                            <h4 class="title">Data Product</h4>
+                                                            <div class="box-content">
+                                                                <p>
+                                                                  Our strategic partnership with the Telecommunication sector  is a sure way of offering
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="iconbox icon-left v1">
+                                                    <div class="thumb">
+                                                        <img src="images/about/home1/3.jpg" alt="image">
+                                                        <div class="overlay"></div>
+                                                    </div>
+                                                    <div class="box-header v2">
+                                                        <i class="icon-piggy-bank"></i>
+                                                    </div>
+                                                    <div class="icon-post">
+                                                        <div class="box-title">
+                                                            <h4 class="title">SIM Packs</h4>
+                                                            <div class="box-content">
+                                                                <p>
+                                                                  Sim Packs are readily available for purchase at competitive prices through our vast
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- flat-row -->
+
+        <section class="flat-row no-padding">
+            <div class="flat-fun-fact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="iteam-fact v1">
+                                <div class="num-fact">
+                                    <p>18</p>
+                                </div>
+                                <div class="text-fact">
+                                    <h4 class="title">Branch <br>Locations</h4>
+                                    <a href="#" class="comment-reply">Find Our Location <i class="fa fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="iteam-fact v2">
+                                <div class="num-fact">
+                                    <p>+1M</p>
+                                </div>
+                                <div class="text-fact">
+                                    <h4 class="title">Happy <br>Clients</h4>
+                                    <a href="#" class="comment-reply">Read More <i class="fa fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="iteam-fact v3">
+                                <div class="num-fact">
+                                    <p>10</p>
+                                </div>
+                                <div class="text-fact">
+                                    <h4 class="title">Years of <br>Experience</h4>
+                                    <a href="#" class="comment-reply">Learn More <i class="fa fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flat-row portfolio-row-page">
+            <!-- Portfolio Fullwidth -->
+            <div class="container">
+                <div class="portfolio-index1">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title-section style1">
+                                <h3 class="title">Our Service Areas</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="flat-portfolio v1">
+                                <ul class="portfolio-filter">
+                                    <li class="active v1"><a data-filter="*" href="#">All</a></li>
+                                    <li><a data-filter=".connect" href="#">Connect Services</a></li>
+                                    <li><a data-filter=".sales" href="#">Sales & Distribution</a></li>
+                                    <li><a data-filter=".mmoney" href="#">Mobile Money</a></li>
+                                    <li><a data-filter=".erecharge" href="#">E-Recharge</a></li>
+                                </ul><!-- /.project-filter -->
+
+                                <div class="portfolio-wrap clearfix">
+                                    <div class="item v1 connect">
+                                        <div class="item-content">
+                                            <div class="thumb">
+                                                <img src="images/portfolio/home1/1.jpg" alt="image">
+                                            </div>
+                                            <div class="link-v1">
+                                                <h5 class="title">Connect Services</h5>
+                                                <p>SIM Swap, PIN Retrieval, VTU (Virtual Top-Up) and more</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item v1 sales">
+                                        <div class="item-content">
+                                            <div class="thumb">
+                                                <img src="images/portfolio/home1/2.jpg" alt="image">
+                                            </div>
+                                            <div class="link-v1">
+                                                <h5 class="title">Sales & Distribution</h5>
+                                                <p>Recharge Cards, SIM Packs, Mobile/GSM Phones and more</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item v1 mmoney">
+                                        <div class="item-content">
+                                            <div class="thumb">
+                                                <img src="images/portfolio/home1/3.jpg" alt="image">
+                                            </div>
+                                            <div class="link-v1">
+                                                <h5 class="title">Mobile Money</h5>
+                                                <p>providing Mobile Money services to customers across Nigeria</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item v1 erecharge">
+                                        <div class="item-content">
+                                            <div class="thumb">
+                                                <img src="images/portfolio/home1/4.jpg" alt="image">
+                                            </div>
+                                            <div class="link-v1">
+                                                <h5 class="title">E-Recharge</h5>
+                                                <p>We are engaged in the sale of recharge cards through virtual means.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.portfolio-wrap -->
+                            </div><!-- /.flat-portfolio -->
+                        </div><!-- /.col-md-12 -->
+                    </div><!-- /.row -->
+                </div><!-- /.portfolio-index1 -->
+            </div><!-- /.container -->
+        </section><!-- /.flat-row  -->
+
+        <div class="page-title parallax parallax1">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="flat-talk">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title-section style1">
+                                <p>To help entrepreneurs get their act together</p>
+                                <p><span>before they talk </span> to investors.</p>
+                            </div>
+                        </div>
+                    </div><!-- row -->
+                </div><!-- flat-talk -->
+            </div><!-- container -->
+        </div><!-- page-title -->
+
+        <section class="flat-row no-padding">
+            <div class="flat-clients">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="thumb-clients v1">
+                                <img src="images/clients/1.png" alt="image">
+                            </div>
+                            <div class="thumb-clients v2">
+                                <img src="images/clients/2.png" alt="image">
+                            </div>
+                            <div class="thumb-clients v3">
+                                <img src="images/clients/3.png" alt="image">
+                            </div>
+                            <div class="thumb-clients v4">
+                                <img src="images/clients/4.png" alt="image">
+                            </div>
+                            <div class="thumb-clients v5">
+                                <img src="images/clients/5.png" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flat-row">
+            <div class="flat-choose-us flat-news v1">
+                <div class="flat-silder">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="box">
+                                    <div class="title-v1">
+                                        <h4 class="title">Request Call Back.</h4>
+                                        <p>Would you like to speak to one of our financial advisers over the phone? Just submit your details and we'll be in touch shortly. You can also email us if you would prefer.</p>
+                                    </div>
+                                    <div class="form-box">
+                                        <form action="#" method="post" id="commentform-footer" class="comment-form" novalidate="">
+                                            <select name="style cars">
+                                                <option value="1" selected="">How can we help?</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+
+                                            <fieldset class="style name-container">
+                                                <input type="text" id="author-footer" placeholder="You name*" class="tb-my-input" name="author" tabindex="1" value="" size="32" aria-required="true">
+                                            </fieldset>
+
+                                            <fieldset class="style phone-container">
+                                                <input type="text" id="phone-footer" placeholder="You phone number*" class="tb-my-input" name="phone" tabindex="2" value="" size="32" aria-required="true">
+                                            </fieldset>
+
+                                            <fieldset class="style email-container">
+                                                <input type="text" id="email-footer" placeholder="You Email" class="tb-my-input" name="email" tabindex="2" value="" size="32" aria-required="true">
+                                            </fieldset>
+
+                                            <div class="submit-wrap">
+                                                <button class="flat-button button-style">submit <i class="fa fa-chevron-right"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="company-news v1">
+                                    <div class="title-section">
+                                        <h4 class="title">Company News</h4>
+                                    </div>
+                                    <div class="post-us">
+                                        <div class="blog-home v1">
+                                            <div class="item">
+                                                <div class="thumb">
+                                                    <img src="images/about/home1/4.jpg" alt="image">
+                                                    <div class="overlay"></div>
+                                                </div>
+                                                <div class="post-v1">
+                                                    <div class="meta-post">
+                                                        <a href="#">15 November 2016</a>
+                                                    </div>
+                                                    <h4 class="title"><a href="#">Hire a Branding Consultant With a Similar Aesthetic to Your Own</a></h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="thumb">
+                                                    <img src="images/about/home1/5.jpg" alt="image">
+                                                    <div class="overlay"></div>
+                                                </div>
+                                                <div class="post-v1">
+                                                    <div class="meta-post">
+                                                        <a href="#">15 November 2016</a>
+                                                    </div>
+                                                    <h4 class="title"><a href="#">The 6-Step Method for Managing Any Ethical Dilemma</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="post-list">
+                                        <ul class="list-us">
+                                            <li class="style-1">
+                                                <div class="num-list">
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="text-list">
+                                                    <p>Too Much? Too Little? How to Set Fees for Your New Consulting Business</p>
+                                                </div>
+                                            </li>
+
+                                            <li class="style-2">
+                                                <div class="num-list v2">
+                                                    <p>2</p>
+                                                </div>
+                                                <div class="text-list">
+                                                    <p>30 Questions You Must Ask When Hiring a Social Media Consultant. When Outsourcing Social Media Marketing Makes Sense</p>
+                                                </div>
+                                            </li>
+
+                                            <li class="style-3">
+                                                <div class="num-list v3">
+                                                    <p>3</p>
+                                                </div>
+                                                <div class="text-list">
+                                                    <p>Facebook Wants to Help Make Your App Super Smart </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-logo">
+                            <img src="images/logo-footer.png" alt="image">
+                            <div class="im-map">
+                                <h5 class="title">We have over 15 years of experience</h5>
+                                <p>Our agents are available to help you 24 hours a day, seven days week</p>
+                                <div class="map">
+                                    <a href="#"><i class="fa fa-map-marker"></i> Go to Google Maps</a>
+                                </div>
+                            </div>
+                        </div><!-- footer-logo -->
+                    </div><!-- col-md-4 -->
+
+                    <div class="col-md-2">
+                        <div class="widget widget-follow-us">
+                            <div class="title-link v3">
+                                <h5 class="widget-title">Follow Us</h5>
+                            </div>
+                            <ul class="follow-us">
+                                <li class="facebook"><a href="#"> Facebook</a></li>
+                                <li class="twiter"><a href="#"> Twiiter</a></li>
+                                <li class="google"><a href="#"> Google Plus </a></li>
+                                <li class="linkedIn"><a href="#"> LinkedIn</a></li>
+                                <li class="youtube"><a href="#"> Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- col-md-2 -->
+
+                    <div class="col-md-3">
+                        <div class="widget widget-our-services">
+                            <div class="title-link v4">
+                                <h5 class="widget-title">Our Services</h5>
+                            </div>
+                            <ul class="our_services">
+                                <li class="facebook"><a href="#"> Connect Services</a></li>
+                                <li class="twitch"><a href="#"> Sales & Distribution</a></li>
+                                <li class="google"><a href="#"> Mobile Money</a></li>
+                                <li class="linkedIn"><a href="#"> Sim Registration Services</a></li>
+                                <li class="youtube"><a href="#"> Virtual Top-Up (VTU)</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- col-md-3 -->
+
+                    <div class="col-md-3">
+                        <div class="widget widget-subscribe-us">
+                            <div class="title-link v4">
+                                <h5 class="widget-title">Subscribe Us</h5>
+                            </div>
+                            <p>Sign Up for our mailing list to get latest updates and news.</p>
+                            <div class="widget subscribe-search">
+                                <form action="#" id="mailform" method="get">
+                                    <div>
+                                        <input type="text" id="ss" class="ssss" placeholder="Enter your email.">
+                                        <button class="submit-button"><i class="fa fa-envelope-open-o"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- footer -->
+
+        <!-- Bottom -->
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container-bottom">
+                            <div class="copyright">
+                                <p>Coyright © 2017 Golad. All rights reserved.</p>
+                            </div>
+                        </div><!-- /.container-bottom -->
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- Bottom -->
+
+        <!-- Go Top -->
+        <a class="go-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </a>
+
+        <!-- Javascript -->
+        <!-- Javascript -->
+        <script type="text/javascript" src="javascript/jquery.min.js"></script>
+        <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.easing.js"></script>
+        <script type="text/javascript" src="javascript/jquery.isotope.min.js"></script>
+        <script type="text/javascript" src="javascript/imagesloaded.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
+        <script type="text/javascript" src="javascript/parallax.js"></script>
+        <script type="text/javascript" src="javascript/smoothscroll.js"></script>
+
+        <script type="text/javascript" src="javascript/jquery-countTo.js"></script>
+        <script type="text/javascript" src="javascript/owl.carousel.js"></script>
+
+        <script type="text/javascript" src="javascript/jquery.easypiechart.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.bxslider.js"></script>
+
+
+        <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+        <script type="text/javascript" src="javascript/main.js"></script>
+        <script type="text/javascript" src="javascript/jquery.tweet.min.js"></script>
+
+        <!-- Revolution Slider -->
+        <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script type="text/javascript" src="revolution/js/slider.js"></script>
+
+        <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+        <!-- jquery login signup modal functions with jquery -->
+        <script type="text/javascript" src="javascript/login_signup.js"></script>
+    </div>
+</body>
+</html>
